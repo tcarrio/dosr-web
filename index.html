@@ -1,18 +1,10 @@
 <!DOCTYPE HTML>
-<!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		<title>DOSR</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
 
@@ -22,10 +14,10 @@
 					<nav>
 						<ul>
 							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">The Project</a></li>
-							<li><a href="#two">The Sysadmins</a></li>
-							<li><a href="http://tom.ou.carrio.me/">GitLab</a></li>
-							<li><a href="http://tom.ou.carrio.me:8065/">Mattermost</a></li>
+							<li><a href="#project">The Project</a></li>
+							<li><a href="#sysadmins">The Sysadmins</a></li>
+							<li><a href="http://dosr.carrio.me:8000/">GitLab</a></li>
+							<li><a href="http://dosr.carrio.me:8065/">Mattermost</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -40,16 +32,16 @@
 							<h1>DOSR</h1>
 							<p>The <strong>D</strong>ev <strong>O</strong>ps <strong>S</strong>tack <strong>R</strong>eborn.</p>
 							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
+								<li><a href="#project" class="button scrolly">Learn more</a></li>
 							</ul>
 						</div>
 					</section>
 
-				<!-- One -->
-					<section id="one" class="wrapper style3 fade-up">
+				<!-- project -->
+					<section id="project" class="wrapper style3 fade-up">
 						<div class="inner">
 							<h2>The Project Spec</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
+							<p id="spec-desc">DOSR is a Dev Ops Stack, consisting of the GitLab service, integrated with Mattermost and the GitLab Runner Continuous Integration service, providing developer a way to perform automatic testing on pull requests, commits, and more.</p>
 							<div class="features">
 								<section>
 									<span class="icon major fa-code"></span>
@@ -77,9 +69,9 @@
 									<p>Issues generated on GitLab will be reflected on Mattermost, so group discussion and collaboration is more effective than ever.</p>
 								</section>
 								<section>
-									<span class="icon major fa-cloud"></span>
-									<h3>Cloud Backups</h3>
-									<p>All services use a local database server which duplicates data to cloud services to reduce a hardware failure impact.</p>
+									<span class="icon major fa-user"></span>
+									<h3>Single Sign On</h3>
+									<p>All you'll need is your login to GitLab and you're ready to go on all our offered services!</p>
 								</section>
 							</div>
 							<ul class="actions">
@@ -88,90 +80,32 @@
 						</div>
 					</section>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style2 spotlights">
+				<!-- sysadmins -->
+					<section id="sysadmins" class="wrapper style2 spotlights">
 						<section>
-							<a href="#" class="image"><img src="images/carrio2_thumb.jpg" alt="" data-position="center center" /></a>
+							<a href="#" class="image about-img"><img src="images/carrio2_thumb.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Tom Carrio</h2>
 									<p>I'm a derp. I'm a derp derp derp. This is some super professional description of my amateurish ways. Yay.</p>
 									<ul class="actions">
-										<li><a href="#" class="button">Learn more</a></li>
+										<li><a href="https://tom.carrio.me/" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
 						<section>
-							<a href="#" class="image"><img src="images/ehlert_thumb.jpg" alt="" data-position="top center" /></a>
+							<a href="#" class="image about-img"><img src="images/ehlert_thumb.jpg" alt="" data-position="center center" /></a>
 							<div class="content">
 								<div class="inner">
 									<h2>Chase Ehlert</h2>
 									<p>And if you thought that was derpy. Ohhhhh mannnnnn.</p>
 									<ul class="actions">
-										<li><a href="#" class="button">Learn more</a></li>
+										<li><a href="https://4chan.org/g/" class="button">Learn more</a></li>
 									</ul>
 								</div>
 							</div>
 						</section>
-					</section>
-					
-
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="field half first">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="5"></textarea>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
 					</section>
 
 			</div>
@@ -180,7 +114,7 @@
 			<footer id="footer" class="wrapper style1-alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; DOSR. No rights reserved. We have none. This copyright is a joke.</li>
 					</ul>
 				</div>
 			</footer>
@@ -191,7 +125,6 @@
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
 	</body>
